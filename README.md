@@ -25,7 +25,9 @@ To create a project:
     cd MyNewAwesomeApp
     yo cg-angular
 
-By running the generator command (i.e. yo cg-angular:partial my-partial [attribute:datatype]), the following files are created in the app/controllers/my-partial folder.
+By running the generator command i.e. 
+    yo cg-angular:partial my-partial [attribute:datatype]
+the following files are created in the app/controllers/my-partial folder.
 * my-partial.html
 * my-partial.js
 * my-partial.less
