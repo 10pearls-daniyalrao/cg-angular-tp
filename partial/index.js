@@ -166,55 +166,55 @@ PartialGenerator.prototype.askFor = function askFor() {
     if(string[0].slice(-3) === '_id' && string[1] === 'integer')
     {
       var name = (string[0]);
-      input.push('<div class="form-group" ng-class="{\'has-error\' : '+this.resource+'.'+name+'.$invalid && !'+this.resource+'Form.'+name+'.$pristine}">\
-        <label>'+name+'</label>\
-        <select name="'+name+'" ng-model="current'+this.resource_cap+'.'+name+'" class="form-control" required>\
-        <option> </option>\
-        </select>\
-        <p ng-show="'+this.resource+'Form.'+name+'.$invalid && !'+this.resource+'.'+name+'.$pristine" class="help-block" > Your error message here.</p>\
-        </div>');
-      th.push('<th>'+name+'</th>');
+      input.push('<div class="form-group" ng-class="{\'has-error\' : '+this.resource+'.'+name+'.$invalid && !'+this.resource+'Form.'+name+'.$pristine}">\n\
+            <label>'+name+'</label>\n\
+            <select name="'+name+'" ng-model="current'+this.resource_cap+'.'+name+'" class="form-control" required>\n\
+            <option> </option>\n\
+            </select>\n\
+            <p ng-show="'+this.resource+'Form.'+name+'.$invalid && !'+this.resource+'.'+name+'.$pristine" class="help-block" > Your error message here.</p>\n\
+          </div> \n');
+      th.push('\n <th>'+name+'</th>\n');
       fields.push(string[0]+': " "');
-      td.push('<td>{{'+this.resource+'.'+name+'}}</td>');
+      td.push('\n <td>{{'+this.resource+'.'+name+'}}</td>\n');
     }
     else if(string[1] === 'integer')
     {
       var name = (string[0]);
-      input.push('<div class="form-group" ng-class="{\'has-error\' : '+this.resource+'.'+name+'.$invalid && !'+this.resource+'Form.'+name+'.$pristine}">\
-        <label>'+name+'</label>\
-        <input type="text" name="'+name+'" ng-model="current'+this.resource_cap+'.'+name+'" class="form-control" required>\
-        </input>\
-        <p ng-show="'+this.resource+'Form.'+name+'.$invalid && !'+this.resource+'.'+name+'.$pristine" class="help-block" > Your error message here.</p>\
-        </div>');
-      th.push('<th>'+name+'</th>');
+      input.push('\t \t \t \t \t<div class="form-group" ng-class="{\'has-error\' : '+this.resource+'.'+name+'.$invalid && !'+this.resource+'Form.'+name+'.$pristine}">\n\
+            <label>'+name+'</label>\n\
+            <input type="text" name="'+name+'" ng-model="current'+this.resource_cap+'.'+name+'" class="form-control" required>\n\
+            </input>\n\
+            <p ng-show="'+this.resource+'Form.'+name+'.$invalid && !'+this.resource+'.'+name+'.$pristine" class="help-block" > Your error message here.</p>\n\
+        \t</div> \n');
+      th.push('\t \t \t \t \t \t<th>'+name+'</th>\n');
       fields.push(string[0]+': " "');
-      td.push('<td>{{'+this.resource+'.'+name+'}}</td>');
+      td.push('\t \t \t \t \t \t<td>{{'+this.resource+'.'+name+'}}</td>\n');
     }
     else if(string[1] === 'text')
     {
       var name = (string[0]);
-      input.push('<div class="form-group" ng-class="{\'has-error\' : '+this.resource+'.'+name+'.$invalid && !'+this.resource+'Form.'+name+'.$pristine}">\
-        <label>'+name+'</label>\
-        <input type="textarea" name="'+name+'" ng-model="current'+this.resource_cap+'.'+name+'" class="form-control" required>\
-        </input>\
-        <p ng-show="'+this.resource+'Form.'+name+'.$invalid && !'+this.resource+'.'+name+'.$pristine" class="help-block" > Your error message here.</p>\
-        </div>');
-      th.push('<th>'+name+'</th>');
+      input.push('\t \t \t \t \t<div class="form-group" ng-class="{\'has-error\' : '+this.resource+'.'+name+'.$invalid && !'+this.resource+'Form.'+name+'.$pristine}">\n\
+            <label>'+name+'</label>\n\
+            <input type="textarea" name="'+name+'" ng-model="current'+this.resource_cap+'.'+name+'" class="form-control" required>\n\
+            </input>\n\
+            <p ng-show="'+this.resource+'Form.'+name+'.$invalid && !'+this.resource+'.'+name+'.$pristine" class="help-block" > Your error message here.</p>\n\
+        \t</div> \n');
+      th.push('\t \t \t \t \t \t<th>'+name+'</th>\n');
       fields.push(string[0]+': " "');
-      td.push('<td>{{'+this.resource+'.'+name+'}}</td>');
+      td.push('\t \t \t \t \t \t<td>{{'+this.resource+'.'+name+'}}</td>\n');
     }
     else if(string[1] === 'string')
     {
       var name = (string[0]);
-      input.push('<div class="form-group" ng-class="{\'has-error\' : '+this.resource+'.'+name+'.$invalid && !'+this.resource+'Form.'+name+'.$pristine}">\
-        <label>'+name+'</label>\
-        <input type="text" name="'+name+'" ng-model="current'+this.resource_cap+'.'+name+'" class="form-control" required>\
-        </input>\
-        <p ng-show="'+this.resource+'Form.'+name+'.$invalid && !'+this.resource+'.'+name+'.$pristine" class="help-block" > Your error message here.</p>\
-        </div>');
-      th.push('<th>'+name+'</th>');
+      input.push('\t \t \t \t \t<div class="form-group" ng-class="{\'has-error\' : '+this.resource+'.'+name+'.$invalid && !'+this.resource+'Form.'+name+'.$pristine}">\n\
+            <label>'+name+'</label>\n\
+            <input type="text" name="'+name+'" ng-model="current'+this.resource_cap+'.'+name+'" class="form-control" required>\n\
+            </input>\n\
+            <p ng-show="'+this.resource+'Form.'+name+'.$invalid && !'+this.resource+'.'+name+'.$pristine" class="help-block" > Your error message here.</p>\n\
+        \t</div> \n');
+      th.push('\t \t \t \t \t \t<th>'+name+'</th>\n');
       fields.push(string[0]+': " "');
-      td.push('<td>{{'+this.resource+'.'+name+'}}</td>');
+      td.push('\t \t \t \t \t \t<td>{{'+this.resource+'.'+name+'}}</td>\n');
     }
     else
     {
