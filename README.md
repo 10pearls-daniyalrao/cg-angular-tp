@@ -31,7 +31,7 @@ By running the generator command i.e. :
 
 the following files are created in the app/controllers/my-crud folder
 
-* my-partial.html
-* my-partial.js
-* my-partial.less
-* my-partial-spec.js
+* my-crud.html
+* my-crud.js
+* my-crud.less
+* my-crud-spec.js
