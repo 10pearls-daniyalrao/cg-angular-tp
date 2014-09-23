@@ -27,9 +27,9 @@ To create a project:
 
 By running the generator command i.e. :
 
-    yo cg-angular:partial my-partial [attribute:datatype]
+    yo cg-angular:crud my-crud [attribute:datatype]
 
-the following files are created in the app/controllers/my-partial folder
+the following files are created in the app/controllers/my-crud folder
 
 * my-partial.html
 * my-partial.js
